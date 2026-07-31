@@ -337,7 +337,9 @@ This project is licensed under the **MIT License**.
 ---
 
 # 👨‍💻 Author
-
+**B Suhas**
+**Toufiq Ansari**
+**C Vinay Raj**
 **Vinay Kumar**
 
 Bachelor of Engineering (Artificial Intelligence & Machine Learning)
