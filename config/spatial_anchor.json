@@ -1,0 +1,52 @@
+{
+    "airport_info": {
+        "airport_name": "Rajiv Gandhi International Airport",
+        "icao": "VOHS",
+        "region": "INDIA",
+        "utm_epsg": "EPSG:32644",
+        "elevation_msl_m": 616.92,
+        "runway_width_m": 45.11,
+        "runway_length_m": 4361.22,
+        "azimuth_deg": 89.95,
+        "azimuth_rad": 1.57
+    },
+    "workspace": {
+        "processed_dir": "data/processed_VOHS",
+        "t1_raster": "data/processed_VOHS/t1_vohs.tif",
+        "t2_raster": "data/processed_VOHS/t2_vohs.tif",
+        "change_prob_raster": "data/processed_VOHS/change_prob_vohs.tif",
+        "final_mask_raster": "data/processed_VOHS/final_change_mask.tif"
+    },
+    "thresholds_wgs84": {
+        "threshold_primary": [
+            78.412323,
+            17.230587
+        ],
+        "threshold_secondary": [
+            78.453304,
+            17.231141
+        ]
+    },
+    "thresholds_utm": {
+        "threshold_primary": [
+            224820.67,
+            1906905.61
+        ],
+        "threshold_secondary": [
+            229181.9,
+            1906909.04
+        ]
+    },
+    "bounding_box_utm": {
+        "min_x": 219001.28,
+        "max_x": 235001.28,
+        "min_y": 1898907.33,
+        "max_y": 1914907.33
+    },
+    "bounding_box_wgs84": {
+        "min_lon": 78.358667,
+        "max_lon": 78.507018,
+        "min_lat": 17.157654,
+        "max_lat": 17.304056
+    }
+}

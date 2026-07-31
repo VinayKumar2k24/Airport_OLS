@@ -1,0 +1,101 @@
+/* Global scrollbars and core layout definitions */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Outfit', sans-serif;
+  background-color: #030914;
+  color: #ffffff;
+  overflow: hidden; /* GIS dashboard occupies full screen without native scrollbar */
+  height: 100vh;
+  width: 100vw;
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Custom Scrollbars for dark mode */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(3, 9, 20, 0.5);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(30, 144, 255, 0.3);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(30, 144, 255, 0.6);
+}
+
+/* Glassmorphism utility classes */
+.glass-panel {
+  background: rgba(10, 22, 40, 0.7) !important;
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+  border-radius: 12px;
+}
+
+.glass-card-hover {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.glass-card-hover:hover {
+  transform: translateY(-2px);
+  background: rgba(10, 22, 40, 0.8) !important;
+  border-color: rgba(30, 144, 255, 0.3) !important;
+  box-shadow: 0 12px 40px 0 rgba(30, 144, 255, 0.15);
+}
+
+/* Custom Map Overlay styling */
+.mapbox-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.mapbox-overlay * {
+  pointer-events: auto;
+}
+
+/* Pulse animation for active/critical alerts */
+@keyframes pulse-red {
+  0% {
+    box-shadow: 0 0 0 0 rgba(255, 77, 77, 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(255, 77, 77, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(255, 77, 77, 0);
+  }
+}
+
+.pulse-critical {
+  animation: pulse-red 2s infinite;
+}
+
+/* Terminal style code output */
+.mono-text {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.85rem;
+}

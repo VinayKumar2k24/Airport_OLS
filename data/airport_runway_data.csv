@@ -1,0 +1,10 @@
+ICAO,Airport_Name,Runway,Elevation_MSL_m,Runway_Width_m,Threshold1_Lat,Threshold1_Lon,Threshold2_Lat,Threshold2_Lon
+VIDP,Indira Gandhi International Airport,Sep-27,236.83,45.11,28.570499,77.087997,28.569799,77.116997
+VIDP,Indira Gandhi International Airport,Oct-28,236.83,45.11,28.5672,77.084801,28.5585,77.122498
+VIDP,Indira Gandhi International Airport,11L/29R,236.83,45.11,28.550125,77.068176,28.540747,77.111877
+VIDP,Indira Gandhi International Airport,11R/29L,236.83,60.05,28.547171,77.065491,28.537729,77.109528
+VOHS,Rajiv Gandhi International Airport,09L/27R,616.92,45.11,17.230587,78.412323,17.231141,78.453304
+VOHS,Rajiv Gandhi International Airport,09R/27L,616.92,60.05,17.228572,78.412823,17.229103,78.452866
+VOGA,Manohar International Airport,Oct-28,153.6,45,15.745697,73.844517,15.743108,73.877075
+VOGO,Dabolim Airport,Aug-26,57.3,45,15.377814,73.817103,15.383878,73.8484
+VOBZ,Vijayawada Airport,Aug-26,24.7,45,16.529533,80.79165,16.535633,80.820778
